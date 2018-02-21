@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Sabates- TipoDeUsuario</title>
+	<link rel="stylesheet" type="text/css" href="/font/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="/css/table.css">
+	<link rel="stylesheet" type="text/css" href="/css/ventas.css">
+	<link href=/static/css/app.3fba4d6729f8a890a991a015077c787e.css rel=stylesheet>
+  
+</head>
+<body>
+    <header class="header sticky-top" > 
+		<nav class="navbar navbar-expand-lg navbar-dark">
+		    <a class="navbar-brand col-sm-3 col-md-3 col-xl-2 mr-0 titulo" href="#">SABATES</a>
+		     <div class="contenedorAu" style="margin-left: auto;"> 
+		        <ul class="navbar-nav px-3">
+		            <li class="nav-item dropdown">
+		                <a href="#" class="nav-link dropdown-toggle" id="userDropdown" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+		                    nombre de usuario                          
+		                </a>
+
+		                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">                          
+		                    <a href="#" class="dropdown-item">
+		                        <i class="fa fa-user" aria-hidden="true"></i> Perfil                  
+		                    </a>
+		                    <a href="#" class="dropdown-item">
+		                        <i class="fa fa-lock" aria-hidden="true"></i> Cambiar contraseña       
+		                    </a>
+		                    <div class="dropdown-divider"></div>
+		                    <a href="#" onclick="alert('cierre de sesión')" class="dropdown-item">
+		                        <i class="fa fa-power-off" aria-hidden="true"></i> Cerrar sesión
+		                    </a>
+		                </div>
+		            </li>
+		      </ul>
+		    </div>
+		</nav>
+	</header>
+	<div class="container-fluid" style="margin-top: -10px;">
+	      <div class="row">
+	        <nav class="col-md-3 col-xl-2 d-none d-md-block bg-light sidebar">
+	            <ul class="nav flex-column">
+	              <li class="xn-profile">
+	                    <div class="profile">
+	                            <div class="profile-image">
+	                                <img src="/img/logo.png" alt="John Doe"/>
+	                            </div>
+	                            <div class="profile-data">
+	                                <div class="profile-data-name"><strong>ADMINISTRADOR</strong></div>
+	                                <div class="profile-data-title"><strong>Nombre del Usuario</strong></div>
+	                            </div>
+	                    </div>                                                                        
+	                </li>
+	              <li class="nav-item">
+	                <a class="nav-link" id="opcInicio">
+	                  <i class="fa fa-fw fa-home"></i>
+	                  Inicio
+	                </a>
+	              </li>
+	              <li class="nav-item">
+	                <a class="nav-link" id="opcActos">
+	                  <i class="fa fa-fw fa-copy"></i>
+	                  Actos
+	                </a>
+	              </li>
+	              <li class="nav-item">
+	                <a class="nav-link"  id="opcGacetas">
+	                  <i class="fa fa-fw fa-th-list "></i>
+	                  Gacetas
+	                </a>
+	              </li>
+	              <li class="nav-item">
+	                <a class="nav-link" id="opcVenta">
+	                  <i class="fa fa-fw fa-ticket"></i>
+	                  Venta
+	                </a>
+	              </li>
+	            </ul>
+
+	            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	              <span>Mantenimiento</span>
+	              <a class="d-flex align-items-center text-muted" href="#">
+	                  <i class="fa fa-fw fa-cogs"></i>
+	                </a>
+	            </h6>
+	            <ul class="nav flex-column mb-2">
+	              <li class="nav-item">
+	                <a class="nav-link" id="opcUsuario">
+	                  <i class="fa fa-fw fa-user"></i>
+	                  Usuarios
+	                </a>
+	              </li>
+	              <li class="nav-item">
+	                <a class="nav-link" id="opcPlanCuenta">
+	                  <i class="fa fa-fw fa-bar-chart"></i>
+	                  Plan de Cuentas
+	                </a>
+	              </li>
+	              <li class="nav-item">
+	                <a class="nav-link" href="#">
+	                  <i class="fa fa-fw fa-bank"></i>
+	                  Cuentas Bancarias
+	                </a>
+	              </li>
+	              <li class="nav-item">
+	                <a class="nav-link" href="#">
+	                  <i class="fa fa-fw fa-users"></i>
+	                  Contribuyentes
+	                </a>
+	              </li>
+	              <li class="nav-item">
+	                <a class="nav-link" id="opcNuevoActo">
+	                  <i class="fa fa-fw fa-file-text-o"></i>
+	                  Nuevo Acto
+	                </a>
+	              </li>
+	              <li class="nav-item">
+	                <a class="nav-link" id="opcNuevaGaceta">
+	                  <i class="fa fa-fw fa-clipboard"></i>
+	                  Nueva Gaceta
+	                </a>
+	              </li>
+	            </ul>
+	        </nav>
+		        <main role="main" class="col-md-9 ml-sm-auto col-lg-9 col-xl-10 pt-3 px-4" id="ajaxMain">
+		        	<div id="app"></div>
+		      </main>
+		 </div>
+	</div>
+	<script src="/js/jquery-3.3.1.min.js"></script>
+  <!--  <script src="/js/ajaxFron.js"></script>-->
+</body>
+</html>
