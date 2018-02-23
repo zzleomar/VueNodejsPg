@@ -127,7 +127,7 @@ router.put('/:id', (req, res, next) => {
       return res.status(500).json({success: false, data: err});
     }
     // SQL Query > Update Data
-    client.query('UPDATE books SET isbn=($1), title=($2),author=($3), description=($4),published_year=($5), publisher=($6) WHERE _id=($8)',
+    client.query('UPDATE books SET isbn=($1), title=($2),author=($3), description=($4),published_year=($5), publisher=($6) WHERE _id=($7)',
     [data.isbn , data.title ,data.author , data.description ,data.published_year , data.publisher, id]);
     // SQL Query > Select Data
     var query = client.query("SELECT * FROM books ORDER BY _id ASC");

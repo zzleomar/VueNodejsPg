@@ -368,6 +368,16 @@ label.btn.btn-secondary.active {
     margin-top: auto;
 }
 
+
+nav.col-md-3.col-xl-2.d-none.d-md-block.bg-light.sidebar,nav.navbar.navbar-expand-lg.navbar-dark, a.navbar-brand.col-sm-3.col-md-3.col-xl-2.mr-0.titulo {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 .fade-enter-active {
   transition: all .3s ease;
 }

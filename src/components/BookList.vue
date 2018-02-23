@@ -1,3 +1,5 @@
+  <breadcrumb v-bind:ruta="ruta"></breadcrumb>
+
 <template>
   <b-row>
     <b-col cols="12">
@@ -20,6 +22,7 @@
 </template>
 
 <script>
+import breadcrumb from '@/components/breadcrumb'
 
 import axios from 'axios'
 
@@ -33,7 +36,8 @@ export default {
         actions: { label: 'Action', 'class': 'text-center' }
       },
       books: [],
-      errors: []
+      errors: [],
+      ruta: window.location.pathname
     }
   },
   created () {
@@ -52,6 +56,9 @@ export default {
         params: { id: book._id }
       })
     }
+  },
+  components: {
+    'breadcrumb': breadcrumb
   }
 }
 </script>

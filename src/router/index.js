@@ -4,12 +4,19 @@ import BookList from '@/components/BookList'
 import ShowBook from '@/components/ShowBook'
 import CreateBook from '@/components/CreateBook'
 import EditBook from '@/components/EditBook'
+import InicioAdmin from '@/components/InicioAdmin'
 Vue.use(Router)
+
 
 export default new Router({
   routes: [
     {
       path: '/',
+      name: 'InicioAdmin',
+      component: InicioAdmin
+    },
+    {
+      path: '/lista',
       name: 'BookList',
       component: BookList
     },
